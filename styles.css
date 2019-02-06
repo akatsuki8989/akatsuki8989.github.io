@@ -400,11 +400,57 @@ a img{
   cursor: pointer;
 }
 
+.android-more-button {
+  display: none;
+}
+
+.game-logo {
+  text-align: center;
+}
+.game-logo .app-logo {
+  height: 60px;
+  margin: 0 32px 0 0;
+}
+.game-logo .app-store-logo {
+  height: 40px;
+}
+
+.back-to-top {
+  margin: 0 !important;
+}
+
+.staff {
+  margin: 0 0 64px;
+}
+
+.staff-title {
+  margin: 0;
+}
+.staff-list {
+  display: flex;
+  margin: 16px 0;
+}
+.staff-list a {
+  margin: 0 8px;
+}
+.staff-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
+  .android-more-button {
+    display: block;
+  }
+
   .mdl-layout__header-row {
-    padding: 0 16px 0;
+    padding: 8px 16px;
+  }
+
+  .title {
+    font-size: 20px !important;
   }
 
   .android-navigation-container {
@@ -418,7 +464,7 @@ a img{
   .android-mobile-title {
     display: block !important;
     position: absolute;
-    top: 12px;
+    top: 16px;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .title {
@@ -453,10 +499,6 @@ a img{
   .android.android-search-box.is-focused ~ .android-mobile-title,
   .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {
     opacity: 0;
-  }
-
-  .android-more-button {
-    display: none;
   }
 
   .android-search-box.is-focused {
@@ -507,3 +549,9 @@ p {
   text-align: left;
   font-size: 16px;
 }
+
+.nav-link {
+  text-decoration: none;
+}
+
+
