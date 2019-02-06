@@ -402,10 +402,16 @@ a img{
 
 .android-more-button {
   display: none;
+  position: relative;
+  right: -6px;
 }
 
 .game-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 .game-logo .app-logo {
   height: 60px;
@@ -428,10 +434,11 @@ a img{
 }
 .staff-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 16px 0;
 }
 .staff-list a {
-  margin: 0 8px;
+  margin: 8px;
 }
 .staff-list img {
   width: 60px;
@@ -443,6 +450,14 @@ a img{
 @media (max-width: 900px) {
   .android-more-button {
     display: block;
+  }
+
+  .game-logo .app-logo {
+    margin: 0 0 16px 0;
+  }
+
+  .game-logo .app-store-logo {
+    height: 30px;
   }
 
   .mdl-layout__header-row {
@@ -527,9 +542,10 @@ a img{
     display: none;
   }
 
-/*  .android-footer .mdl-mega-footer--bottom-section {
-    display: none;
-  }*/
+  .back-to-top {
+    text-align: right;
+    margin: 0 0 16px 16px;
+  }
 }
 
 p {
